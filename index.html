@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Morse Code Animator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Nebula Background -->
+    <div class="nebula-background">
+        <div class="stars" id="stars"></div>
+        <div class="nebula-clouds" id="nebulaClouds"></div>
+    </div>
 
+    <!-- Main Translator Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="visualizer-container">
+                <div class="visualizer-ring"></div>
+                <div class="ripple-ring"></div>
+                <div class="visualizer-core" id="visualizer"></div>
+                <div class="ripple-container" id="rippleContainer"></div>
+            </div>
+            <div class="translator-ui">
+                <h1 class="main-title">Morse Code Animator</h1>
+                <p class="subtitle">Translate text into a visual and auditory Morse code experience.</p>
+                
+                <div class="input-group">
+                    <textarea id="textInput" placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <div class="controls">
+                    <button id="translateBtn" class="btn">
+                        <i class="fas fa-play"></i> Translate & Play
+                    </button>
+                    <button id="stopBtn" class="btn btn-secondary" disabled>
+                        <i class="fas fa-stop"></i> Stop
+                    </button>
+                    <button id="settingsBtn" class="btn btn-secondary">
+                        <i class="fas fa-cog"></i> Settings
+                    </button>
+                </div>
+                
+                <div class="settings-panel" id="settingsPanel">
+                    <div class="setting-group">
+                        <label for="speedControl">Speed (WPM):</label>
+                        <input type="range" id="speedControl" min="5" max="30" value="15">
+                        <span class="setting-value" id="speedValue">15</span>
+                    </div>
+                    <div class="setting-group">
+                        <label for="volumeControl">Volume:</label>
+                        <input type="range" id="volumeControl" min="0" max="100" value="80">
+                        <span class="setting-value" id="volumeValue">80</span>
+                    </div>
+                    <div class="setting-group">
+                        <label for="soundToggle">Sound:</label>
+                        <input type="checkbox" id="soundToggle" checked>
+                    </div>
+                    <div class="setting-group">
+                        <label for="rippleToggle">Ripple Effect:</label>
+                        <input type="checkbox" id="rippleToggle" checked>
+                    </div>
+                </div>
+                
+                <div class="output-container">
+                    <div class="output-header">
+                        <h3>Morse Code Output:</h3>
+                        <button class="copy-btn" id="copyBtn">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <pre id="morseOutput"></pre>
+                    <div class="status-indicator" id="statusIndicator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GSAP Scroll-Triggered Sections -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-content">
+                <h2 class="info-title">The Language of Dots & Dashes</h2>
+                <p>Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment.</p>
+            </div>
+            <div class="info-visual">
+                <div class="morse-char-visual dot"></div>
+                <div class="morse-char-visual dash"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-content">
+                <h2 class="info-title">Timing is Everything</h2>
+                <p>The structure of Morse code is based on precise timing. A "dah" (dash) is three times as long as a "dit" (dot). The space between parts of the same letter is one dit, between letters is three dits, and between words is seven dits.</p>
+            </div>
+            <div class="info-visual timing-diagram">
+                <div class="timing-block dit">Dit (1 unit)</div>
+                <div class="timing-block dah">Dah (3 units)</div>
+                <div class="timing-block space">Space (7 units)</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Morse Code Animator &copy; 2023 | Created with HTML, CSS, JavaScript, and GSAP</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
