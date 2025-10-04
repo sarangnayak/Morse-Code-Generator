@@ -45,7 +45,7 @@ It’s built with **HTML**, **CSS**, and **JavaScript**, with focus on clarity, 
 📂 **Repository:** [GitHub Repo Link](https://github.com/sarangnayak/Morse-Code-Generator)
 
 > *(Replace this with a screenshot or GIF of the working app)*  
-> ![Morse Code Generator Screenshot](./assets/screenshot.png)
+> ![Morse Code Generator Screenshot](./preview.png)
 
 ---
 
