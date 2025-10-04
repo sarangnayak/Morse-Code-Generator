@@ -1,55 +1,64 @@
-# 🚀 Project Name
+# 🗣️ Morse Code Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![GitHub stars](https://img.shields.io/github/stars/sarangnayak/PROJECT-NAME?style=social)
-![GitHub forks](https://img.shields.io/github/forks/sarangnayak/PROJECT-NAME?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/sarangnayak/PROJECT-NAME)
-![Repo Size](https://img.shields.io/github/repo-size/sarangnayak/PROJECT-NAME)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+![GitHub stars](https://img.shields.io/github/stars/sarangnayak/Morse-Code-Generator?style=social)  
+![GitHub forks](https://img.shields.io/github/forks/sarangnayak/Morse-Code-Generator?style=social)  
+![Last Commit](https://img.shields.io/github/last-commit/sarangnayak/Morse-Code-Generator)  
+![Repo Size](https://img.shields.io/github/repo-size/sarangnayak/Morse-Code-Generator)
 
 ---
 
 ## 🛰️ About the Project
 
-**Project Name** is a [brief one-line summary, e.g. “modern Pomodoro timer web app”].  
-It’s built using modern web technologies with focus on **performance**, **clean UI**, and **ease of use**.
+**Morse Code Generator** is a simple, intuitive web tool that converts plain text into Morse code (and optionally vice versa, if implemented).  
+It’s built with **HTML**, **CSS**, and **JavaScript**, with focus on clarity, usability, and an elegant minimal UI.
 
-> 🔹 *"Simple. Elegant. Effective."* — The philosophy behind all of Sarang Nayak’s projects.
+> 🔹 *"From letters to dots and dashes — communicate in Morse."*
 
 ---
 
 ## 🧠 Features
 
-- ✅ Feature 1  
-- ✅ Feature 2  
-- ✅ Feature 3  
-- ⚡ Fast, responsive & minimal design  
+- ✅ Text → Morse code conversion  
+- ✅ Copy Morse code output to clipboard  
+- ✅ Clear / reset functionality  
+- ✅ (Optional) Morse → Text decoding (if included)  
+- ⏱️ (Optional) Playback of Morse audio (dot/dash beeps)  
+- 📱 Responsive — works well on desktop & mobile  
 
 ---
 
 ## 🛠️ Built With
 
-| Tech | Purpose |
-|------|----------|
-| **HTML5** | Structure |
-| **CSS3** | Styling / Layout |
-| **JavaScript (ES6)** | Interactivity |
-| *(Add more: GSAP, Anime.js, API name, etc.)* | |
+| Technology | Purpose |
+|------------|---------|
+| **HTML5**  | Structure & markup |
+| **CSS3**   | Styling, layout, responsiveness |
+| **JavaScript (ES6+)** | Conversion logic & UI handling |
+| *(Optional libs / audio APIs)* | (If used) sound playback, animations |
 
 ---
 
 ## 🖼️ Demo / Preview
 
-🔗 **Live Demo:** [Click Here](https://sarangnayak.github.io/PROJECT-NAME/)  
-📂 **Repository:** [GitHub Repo](https://github.com/sarangnayak/PROJECT-NAME)
+🔗 **Live Demo:** *(If deployed – insert link here)*  
+📂 **Repository:** [GitHub Repo Link](https://github.com/sarangnayak/Morse-Code-Generator)
 
-> *(Add a screenshot or GIF here)*  
-> ![App Screenshot](./assets/screenshot.png)
+> *(Replace this with a screenshot or GIF of the working app)*  
+> ![Morse Code Generator Screenshot](./assets/screenshot.png)
 
 ---
 
 ## ⚙️ Installation & Usage
 
-1. Clone this repository:
+### Prerequisites
+
+- A modern web browser  
+- (Optional) Local server (e.g. Live Server in VS Code) — though often you can open `index.html` directly
+
+### Steps
+
+1. Clone the repository  
    ```bash
-   git clone https://github.com/sarangnayak/PROJECT-NAME.git
-   cd PROJECT-NAME
+   git clone https://github.com/sarangnayak/Morse-Code-Generator.git
+   cd Morse-Code-Generator
