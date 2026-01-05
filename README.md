@@ -62,3 +62,14 @@ It’s built with **HTML**, **CSS**, and **JavaScript**, with focus on clarity, 
    ```bash
    git clone https://github.com/sarangnayak/Morse-Code-Generator.git
    cd Morse-Code-Generator
+   ```
+
+   ```
+   Morse-Code-Generator/
+│
+├── index.html        # Main HTML file
+├── style.css         # Styling and UI layout
+├── script.js         # Morse code logic & interactions
+├── preview.png       # App preview image
+└── README.md         # Documentation
+```
